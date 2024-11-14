@@ -7,6 +7,22 @@ Browser extensions are small software programs designed to enhance the browsing 
 
 The `manifest.json` file is the core of any Chrome extension. It provides metadata and defines the main components of the extension. Each extension requires a `manifest.json` with key sections to specify permissions, entry points, and behavior.
 
+```manifest.json
+{
+    "manifest_version": 3,
+    "name": "Extension Demo",
+    "description": "Basic Extension",
+    "version": "1.0.0",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+```
 ## Main Components of a Chrome Extension
 
 ### Popup
